@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+html,body{
+    width:100%;
+    height:99.8%;
+    margin:0;
+    background:#393f3f;
+    }
+#my-video{
+    margin:0;
+    }
+/**
+ *     文件列表的css
+ */
+.file-list{
+    display:none;
+    width:20%;
+    height:99.8%;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#333333;
+    z-index:1000;
+}
+.file-list header{
+    color:#595959;
+    padding:5px;
+    font-size:18px;
+}
+.file-list ul{
+    padding:5px;
+    color:#e2e2e0;
+    font-size:16px
+}
+.file-list ul li{
+    padding:5px 5px 5px 20px;
+    cursor: pointer
+}
+.file-list ul li:hover{
+    background:#222;
+}
+.file-list ul li.activate{
+    background:#3465a4;
+}
+.file-list ul li.play{
+    background-image:url(../images/opening.gif);
+    background-repeat:no-repeat;
+    background-position:5px 65%;
+    color: #6aaa12
+}
+/**
+ * 	控件css
+ * ===========================================
+ * */
+/**
+ * 	-----------------------------------------
+ * 文件列表按钮
+ */
+#vjs-fileList-control{
+	float: right;
+	margin: 6px 10px 0 0;
+	width:16px;
+	height: 16px;
+	background: url(../images/list-closed.gif);
+	border: 0;
+	cursor:pointer
+}
+#vjs-fileList-control.open{
+	background: url(../images/list-open.gif)
+}
+/**
+ * 	------------------------------------
+ * 打开按钮
+ */
+#vjs-open-control{
+	margin: 6px 15px 0 0;
+	width:16px;
+	height: 16px;
+	background: url(../images/open.gif);
+	border: 0;
+	cursor:pointer
+}
+#vjs-open-control:hover{
+	background: url(../images/open-activate.gif);
+}
+/**
+ * 	设置模式按钮
+ */
+#vjs-model-control{
+	margin: 6px 15px 0 0;
+	width:16px;
+	height: 16px;
+	background: url(../images/model.gif);
+	border: 0;
+	cursor:pointer
+}

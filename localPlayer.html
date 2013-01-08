@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>颜海镜视频播放器1.0beta版</title>
+<link href="./css/reset.css" rel="stylesheet">
+<link href="./js/plugins/video-js/video-js.css" rel="stylesheet">
+<link href="./js/plugins/contextMenu/jquery.contextMenu.css" rel="stylesheet">
+<link href="./css/localPlayer.css" rel="stylesheet">
+<link href="./js/plugins/animate-custom/animate-custom.css" rel="stylesheet">
+<script src="./js/plugins/jQuery/jquery-1.8.2.js"></script>
+<script src="./js/plugins/video-js/video.js"></script>
+<script src="./js/plugins/contextMenu/jquery.contextMenu.js"></script>
+<script src="./js/plugins/animate-custom/animate-custom.js"></script>
+</head>
+<body>
+<video id="my-video" class="video-js vjs-default-skin" controls 
+preload="auto" width="800" height="600" poster="" data-setup="{}">
+  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/webm'>
+  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
+  <source src="http://video-js.zencoder.com/oceans-clip.ogg" type='video/webm'>    
+</video>
+<aside id="file-list" class="file-list">
+   <header>播放列表</header>
+   <ul>
+       
+   </ul>
+</aside>
+</body>
+
+<script src="./js/localPlayer.js"></script>
+
+</html>
